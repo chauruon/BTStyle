@@ -15,5 +15,4 @@ const App = () => {
     </LoginProvider>
   );
 };
-
 export default App;
