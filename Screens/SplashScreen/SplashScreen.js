@@ -26,10 +26,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
   },
-  logo: {
-    height: '50%',
-    width: '50%',
-  },
+  // logo: {
+  //   height: '50%',
+  //   width: '50%',
+  // },
 });
 
 export default SplashScreen;
