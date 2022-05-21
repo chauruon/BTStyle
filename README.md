@@ -1,3 +1,3 @@
 # BTStyle
-Tải thư viện: npm install
-Run app: npx react-native run-android
+Tải thư viện: npm install<br>
+Run app: npx react-native run-android<br>
