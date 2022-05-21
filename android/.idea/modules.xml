@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BTstyle.iml" filepath="$PROJECT_DIR$/.idea/modules/BTstyle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BTstyle.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BTstyle.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BTstyle.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BTstyle.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BTstyle.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BTstyle.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BTstyle.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BTstyle.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.iml" filepath="$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1414672303/BTstyle.lottie-react-native.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1766387526/BTstyle.react-native-async-storage_async-storage.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/54682076/BTstyle.react-native-date-picker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/626893973/BTstyle.react-native-gesture-handler.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-1229888504/BTstyle.react-native-image-crop-picker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.iml" filepath="$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-303290735/BTstyle.react-native-image-picker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1246845095/BTstyle.react-native-linear-gradient.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.main.iml" filepath="$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/676946432/BTstyle.react-native-masked-view_masked-view.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1489273088/BTstyle.react-native-pager-view.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.iml" filepath="$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.main.iml" filepath="$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/805791437/BTstyle.react-native-push-notification.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1996337255/BTstyle.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/1996337255/BTstyle.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1801055166/BTstyle.react-native-safe-area-context.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/2111258966/BTstyle.react-native-screens.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-42625869/BTstyle.react-native-svg.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1321976673/BTstyle.react-native-vector-icons.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1773037912/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/-1773037912/react-native-gradle-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1773037912/react-native-gradle-plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1773037912/react-native-gradle-plugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1773037912/react-native-gradle-plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1773037912/react-native-gradle-plugin.test.iml" />
+    </modules>
+  </component>
+</project>
