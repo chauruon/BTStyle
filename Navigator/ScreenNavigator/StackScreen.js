@@ -89,40 +89,13 @@ const StackScreen = () => {
         />
       ) : null}
 
-      <Stack.Screen
-        name="Main"
-        component={Main}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="UserNavigator"
-        component={UserNavigator}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="HomeNavigator"
-        component={HomeNavigator}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="CartNavigator"
-        component={CartNavigator}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="DrawerNavigator"
-        component={DrawerNavigator}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="HotNavigator"
-        component={HotNavigator}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="DetailMenu"
-        component={DetailMenu}
-        options={{
+      <Stack.Screen name="Main" component={Main} options={{header: () => null}}/>
+      <Stack.Screen name="UserNavigator" component={UserNavigator} options={{header: () => null}}/>
+      <Stack.Screen name="HomeNavigator" component={HomeNavigator} options={{header: () => null}}/>
+      <Stack.Screen name="CartNavigator" component={CartNavigator} options={{header: () => null}}/>
+      <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} options={{header: () => null}}/>
+      <Stack.Screen name="HotNavigator" component={HotNavigator} options={{header: () => null}}/>
+      <Stack.Screen name="DetailMenu" component={DetailMenu} options={{
           headerBackTitleVisible: false,
           title: null,
           headerTransparent: true,
@@ -130,9 +103,7 @@ const StackScreen = () => {
           headerTitle: false,
         }}
       />
-      <Stack.Screen
-        name="TabView"
-        component={TabView}
+      <Stack.Screen name="TabView" component={TabView}
         options={{
           title: 'Đơn hàng của tôi',
           headerStyle: {
@@ -149,16 +120,8 @@ const StackScreen = () => {
           headerTitleAlign: 'center',
         }}
       />
-      <Stack.Screen
-        name="PaymentNavigator"
-        component={PaymentNavigator}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name="ChatNavigator"
-        component={ChatNavigator}
-        options={{header: () => null}}
-      />
+      <Stack.Screen name="PaymentNavigator" component={PaymentNavigator} options={{header: () => null}} />
+      <Stack.Screen name="ChatNavigator" component={ChatNavigator} options={{header: () => null}}/>
     </Stack.Navigator>
   );
 };

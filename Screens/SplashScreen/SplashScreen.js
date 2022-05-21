@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
 import {useLogin} from './../../Context/LoginProvider';
 var logo = require('../../assets/images/FlashScreen.png');
+
+const width = Dimensions.get("window").width;
+const height = Dimensions.get("window").height;
 
 const SplashScreen = ({navigation}) => {
   const {setLoading} = useLogin();
@@ -10,7 +13,7 @@ const SplashScreen = ({navigation}) => {
     setLoading(true);
     // navigation.navigate('Main');
     //5s chuyển qua Main
-  }, 3000);
+  }, 4000);
 
   return (
     <View style={styles.container}>
@@ -26,10 +29,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
   },
-  // logo: {
-  //   height: '50%',
-  //   width: '50%',
-  // },
+  logo: {
+    height: height,
+    width: width,
+  },
 });
 
 export default SplashScreen;
