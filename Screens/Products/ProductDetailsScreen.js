@@ -211,6 +211,7 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
           countFiveStar,
         ];
         // let NumRating = average(rating);
+        
         setNumRating(NumRating);
       }
     }
