@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Do_An_Tot_Nghiep\\BT_Style\\BTstyle\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "D:\\Graduacation\\BTStyle\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\chaur\\.gradle\\caches\\transforms-3\\67d14056b295b403e729babe71a271e9\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\24955af9693a8ef23bdba4ac5a9d4a9f\\transformed\\jetified-ucrop-2.2.6-native\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
