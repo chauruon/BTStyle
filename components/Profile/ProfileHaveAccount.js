@@ -118,7 +118,7 @@ const ProfileHaveAccount = ({ navigation, route }) => {
           />
           {/* Line gạch ngang */}
           <View style={styles.divider} />
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
             {/* Chờ thanh toán */}
             <FormOrder
               icon="wallet"
@@ -155,12 +155,12 @@ const ProfileHaveAccount = ({ navigation, route }) => {
         </View>
 
         {/* Gift */}
-        <Gift navigation={navigation} />
+        {/* <Gift navigation={navigation} /> */}
 
         {/* Dịch vụ của tôi */}
-        <View style={styles.Service}>
+        {/* <View style={styles.Service}>
           <MyService icon="charity" name="Dịch vụ của tôi" />
-          {/* hàng 1 */}
+          hàng 1
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <Service icon="help-circle-outline" name={`Trợ giúp `} />
             <Service icon="brightness-percent" name={`Voucher`} />
@@ -168,7 +168,7 @@ const ProfileHaveAccount = ({ navigation, route }) => {
             <Service icon="cash-usd-outline" name={`Nạp thẻ `} />
             <Service icon="card-text-outline" name={`Đánh giá `} />
           </View>
-          {/* hàng 2 */}
+          hàng 2
           <View
             style={{
               flexDirection: 'row',
@@ -181,9 +181,9 @@ const ProfileHaveAccount = ({ navigation, route }) => {
             <Service icon="form-select" name={`Bán cùng\n ArtWear `} />
             <Service icon="share-variant" name={`Chia sẻ `} onPress={onShare} />
           </View>
-        </View>
+        </View> */}
         {/* Thông tin về BT Style */}
-        <TouchableOpacity
+        {/* <TouchableOpacity
           onPress={() =>
             navigation.navigate('UserNavigator', { screen: 'InfomationArtWear' })
           }>
@@ -194,7 +194,7 @@ const ProfileHaveAccount = ({ navigation, route }) => {
               iconright="angle-right"
             />
           </View>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
     </ScrollView>
   );
