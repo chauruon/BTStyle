@@ -13,6 +13,7 @@ import HomeNavigator from './HomeNavigator';
 import ChatNavigator from './ChatNavigator';
 import ProfileNavigator from './ProfileNavigator';
 import MenuNavigator from './MenuNavigator';
+import CartScreen from './CartNavigator';
 import HotNavigator from './HotNavigator';
 import TabViewChat from './TabViewChat';
 import ChatScreen from '../Screens/User/Chat/ChatScreen';
@@ -40,7 +41,7 @@ const Main = ({ navigation }) => {
         name="Home"
         component={HomeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <Icon name="shop" color={color} size={30} />,
+          tabBarIcon: ({ color }) => <Icon name="home" color={color} size={30} />,
           headerShown: false,
         }}
       />
@@ -53,6 +54,14 @@ const Main = ({ navigation }) => {
         }}
       />
       <Tab.Screen
+        name="Cart"
+        component={CartScreen}
+        options={{
+          tabBarIcon: ({ color }) => <IconMenu name="cart" color={color} size={30} />,
+          headerShown: false,
+        }}
+      />
+      {/* <Tab.Screen
         name="Hot"
         component={HotNavigator}
         options={{
@@ -122,7 +131,7 @@ const Main = ({ navigation }) => {
             }}
           />
         </>
-      )}
+      )} */}
 
       <Tab.Screen
         name="Profile"

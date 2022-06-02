@@ -51,11 +51,11 @@ const TimeSale = () => {
           //formate to show
           size={14}
           //Custom background color button
-          digitStyle={{backgroundColor: '#8D6E63'}}
+          digitStyle={{backgroundColor: '#66e8c8'}}
           //Custom text button CountDown
           digitTxtStyle={{color:'#fff'}}
           //Style :
-          separatorStyle={{color: '#8D6E63',marginTop:-15}}
+          separatorStyle={{color: '#66e8c8',marginTop:-15}}
           //Show :
           showSeparator
         />

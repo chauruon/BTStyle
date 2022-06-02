@@ -13,7 +13,7 @@ import Notification from '../../Screens/Notification/Notification';
 import ProductFoundScreen from '../../Screens/Products/ProductFoundScreen';
 import PurchaseOrder from '../../Screens/User/PurchaseOrder/PurchaseOrder';
 import SuccessScreen from '../../Screens/User/Register/SuccessScreen';
-import InfomationArtWear from '../../Screens/Profile/InfomationArtWear';
+import InfomationBtStyle from '../../Screens/Profile/InfomationBtStyle';
 import InfomationScreen from '../../Screens/Profile/InfomationScreen';
 import ResetPassword from '../../Screens/User/ResetPassword/ResetPassword';
 import FavoriteScreen from '../../Screens/Profile/FavoriteScreen';
@@ -181,8 +181,8 @@ const UserNavigator = ({ navigation }) => {
         }}
       />
       <Stack.Screen
-        name="InfomationArtWear"
-        component={InfomationArtWear}
+        name="InfomationBtStyle"
+        component={InfomationBtStyle}
         options={{
           // headerShown: false,
           title: 'Giới thiệu',

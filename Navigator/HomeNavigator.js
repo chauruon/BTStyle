@@ -51,13 +51,13 @@ const HomeNavigator = ({ navigation }) => {
         name="Home Product"
         component={ProductScreen}
         options={{
-          title: 'BT Style',
+          title: 'BEAUTY STYLE',
           headerStyle: {
             backgroundColor: '#fff',
             borderColor: '#F5F5F5',
             borderWidth: 1
           },
-          headerTintColor: '#8D6E63',
+          headerTintColor: '#66e8c8',
           headerTitleStyle: {
             textAlign: 'center',
             alignSelf: 'center',
@@ -71,7 +71,7 @@ const HomeNavigator = ({ navigation }) => {
                 flexDirection: 'row',
                 marginLeft: 10
               }}>
-              <TouchableOpacity >
+              {/* <TouchableOpacity >
                 <IconNotification
                   name="notification"
                   size={24}
@@ -80,8 +80,8 @@ const HomeNavigator = ({ navigation }) => {
                     marginRight: 10
                   }}
                 />
-              </TouchableOpacity>
-              <TouchableOpacity
+              </TouchableOpacity> */}
+              {/* <TouchableOpacity
               onPress={() => navigation.navigate('UserNavigator', { screen: 'SearchScreen' })}
               >
                 <IconSearch
@@ -91,7 +91,7 @@ const HomeNavigator = ({ navigation }) => {
                     marginTop: 2
                   }}
                 />
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </View>
           ),
             headerRight: ({ color }) => (

@@ -160,27 +160,17 @@ const ProductScreen = ({ navigation }) => {
                 />
               </View>
             </View>
-            <View
-              style={{
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'row',
-              }}>
-              <Text style={{ fontSize: 20, color: 'gray' }}>#</Text>
-              <Text style={{ fontSize: 20, fontWeight: '200', fontStyle: 'normal' }}>
-                Thương hiệu ArtWear
-              </Text>
-            </View>
+           
             {/* banner Body */}
             <View style={styles.bannerGif}>
               <SwiperBody />
             </View>
             {/* banner Body TWO */}
-            <View style={styles.bannerGifTwo}>
+            {/* <View style={styles.bannerGifTwo}>
               <SwiperItemBody />
-            </View>
+            </View> */}
             {/* Tìm kiếm hàng đầu */}
-            <View
+            {/* <View
               style={{
                 marginTop: 15,
                 flexDirection: 'row',
@@ -205,10 +195,10 @@ const ProductScreen = ({ navigation }) => {
               renderItem={({ item }) => (
                 <SearchHangDau item={item} navigation={navigation} />
               )}
-            />
+            /> */}
             {/* Tim kiem pho bien */}
             <View style={styles.flashing}>
-              <Text style={styles.flashingTitlee}>Tìm kiếm phổ biến</Text>
+              <Text style={styles.flashingTitlee}>SẢN PHẨM NỔI BẬC</Text>
               <TouchableOpacity
                 onPress={() =>
                   navigation.navigate('HomeNavigator', {
@@ -234,7 +224,7 @@ const ProductScreen = ({ navigation }) => {
             {/* Có thể bạn quan tâm */}
             <View style={{ height: 280, marginTop: 5 }}>
               <View>
-                <Text style={styles.textBox}>Có thể bạn quan tâm</Text>
+                <Text style={styles.textBox}>GỢI Ý HÔM NAY</Text>
               </View>
               <View>
                 <Carousel
@@ -307,7 +297,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 24,
     marginLeft: 4,
-    color: '#8D6E63',
+    color: '#66e8c8',
   },
   flashingSubTitle: {
     fontSize: 15,
@@ -331,7 +321,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 24,
     marginLeft: 4,
-    color: '#8D6E63',
+    color: '#66e8c8',
   },
   bannerGif: {
     height: height / 6,
@@ -348,7 +338,7 @@ const styles = StyleSheet.create({
   },
   allPopularSearch: {
     fontSize: 15,
-    color: 'black',
+    color: '#66e8c8',
     marginTop: 8,
     marginRight: 14,
   },
@@ -356,7 +346,7 @@ const styles = StyleSheet.create({
   textBox: {
     marginLeft: 20,
     marginTop: 10,
-    color: '#384F7D',
+    color: '#66e8c8',
     fontSize: 20,
     fontWeight: 'bold',
   },
@@ -381,7 +371,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 24,
     marginLeft: 10,
-    color: '#8D6E63',
+    color: '#66e8c8',
   },
   viewBody: {
     flexDirection: 'row',
