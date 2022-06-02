@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import {
-    View,
-    StyleSheet,
-    TouchableOpacity,
-    Dimensions,
-} from 'react-native';
+import {View,StyleSheet,TouchableOpacity,Dimensions} from 'react-native';
 const { height, width } = Dimensions.get('window');
 import LottieView from 'lottie-react-native';
 const DialogCart = () => {
