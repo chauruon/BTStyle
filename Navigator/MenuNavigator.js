@@ -18,9 +18,9 @@ const MenuNavigator = ({navigation}) => {
         name="MenuScreen"
         component={MenuScreens}
         options={{
-          title: 'BT Style Mall',
+          title: 'BT STYLE  MALL',
           headerStyle: {
-            backgroundColor: '#8D6E63',
+            backgroundColor: '#66e8c8',
             borderColor: '#F5F5F5',
           },
           headerTintColor: '#fff',

@@ -112,13 +112,13 @@ const ProfileHaveAccount = ({ navigation, route }) => {
           {/* Đơn hàng của tôi */}
           <ProfileItem
             icon="form-select"
-            name="Đơn hàng của tôi"
+            name="Đơn Mua"
             iconright="angle-right"
             onPress={() => navigation.navigate('TabView')}
           />
           {/* Line gạch ngang */}
           <View style={styles.divider} />
-          <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             {/* Chờ thanh toán */}
             <FormOrder
               icon="wallet"
@@ -144,13 +144,13 @@ const ProfileHaveAccount = ({ navigation, route }) => {
               }
             />
             {/* Đánh giá */}
-            <FormOrder
+            {/* <FormOrder
               icon="emoticon-excited-outline"
               name={` Đánh giá`}
               onPress={() =>
                 navigation.navigate('TabView', { screen: 'Đã giao' })
               }
-            />
+            /> */}
           </View>
         </View>
 
@@ -202,18 +202,19 @@ const ProfileHaveAccount = ({ navigation, route }) => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#f7f7f7',
+    flex:1,
   },
   headerWrapper: {
-    backgroundColor: '#FFFCF2',
+    backgroundColor: '#66e8c8',
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
   },
   header: {
-    padding: 15,
+    padding: 30,
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: '#FFFCF2',
+    backgroundColor: '#66e8c8',
   },
   iconCart: {
     color: '#000',
@@ -247,14 +248,14 @@ const styles = StyleSheet.create({
   },
   splash: {
     paddingTop: 60,
-    paddingBottom: 120,
+    paddingBottom: 100,
   },
   content: {
     marginHorizontal: 15,
     paddingHorizontal: 15,
     backgroundColor: '#fff',
     borderRadius: 15,
-    marginTop: -100,
+    // marginTop: -200,
     borderWidth: 0.5,
     borderColor: '#E0E0E0',
     elevation: 2,
@@ -299,6 +300,7 @@ const styles = StyleSheet.create({
   userInfoSection: {
     paddingHorizontal: 10,
     marginTop: -40,
+    marginLeft:10
   },
   row: {
     marginVertical: 20,

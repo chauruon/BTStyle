@@ -311,7 +311,7 @@ const CheckoutScreen = ({ navigation, route }) => {
       />
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Thêm địa chỉ*/}
-        {profile.address == '' ? (
+        {/* {profile.address == '' ? (
           <>
             <CheckOutItem
               icon="map-marker-radius-outline"
@@ -330,7 +330,7 @@ const CheckoutScreen = ({ navigation, route }) => {
               iconright="angle-right"
             />
           </>
-        )}
+        )} */}
         {/* Thêm Full name và số điện thoại*/}
         {profile.fullname == '' && profile.phone == '' ? (
           <>
@@ -402,7 +402,7 @@ const CheckoutScreen = ({ navigation, route }) => {
             <VoucherItem
               iconsale="shopping-sale"
               color="red"
-              name="ArtWear Voucher"
+              name="BTStyle Voucher"
               iconright="angle-right"
               nameVoucher={codeVoucher}
               onPress={() => navigation.navigate('PaymentNavigator', {
@@ -414,14 +414,14 @@ const CheckoutScreen = ({ navigation, route }) => {
               })}
             />
           </View>
-          <View>
+          {/* <View>
             <CheckOutItem
               iconDiamond="diamond"
               color="#191970"
               name="Sử dụng kim cương"
               iconright="angle-right"
             />
-          </View>
+          </View> */}
         </View>
 
         <View style={styles.content}>
@@ -446,7 +446,7 @@ const CheckoutScreen = ({ navigation, route }) => {
           />
         </View>
         {/* Ghi chú */}
-        <View style={styles.content}>
+        {/* <View style={styles.content}>
           <View style={styles.viewNote}>
             <Text style={styles.textNote}>Ghi chú</Text>
           </View>
@@ -460,10 +460,10 @@ const CheckoutScreen = ({ navigation, route }) => {
             value={ghichu}
           >
           </TextInput>
-        </View>
+        </View> */}
 
         {/* Điều khoản BT Style */}
-        <View
+        {/* <View
           style={styles.viewDieuKhoan}>
           <Text style={styles.textDkOne}>
             Nhấn vào nút thanh toán đồng nghĩa bạn đồng ý
@@ -484,7 +484,7 @@ const CheckoutScreen = ({ navigation, route }) => {
               BT Style
             </Text>
           </View>
-        </View>
+        </View> */}
       </ScrollView>
       {/*Footer Button Xác nhận thanh toán ngay bây giờ */}
       <View style={styles.footer}>

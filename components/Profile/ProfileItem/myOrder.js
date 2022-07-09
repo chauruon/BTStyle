@@ -13,7 +13,7 @@ from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const myOrder = ({ icon, name, onPress, iconrights }) => (
   <TouchableOpacity style={styles.itemContainer} onPress={onPress}>
-    <Icon style={styles.icon} name={icon} size={30} color="#8D6E63" />
+    <Icon style={styles.icon} name={icon} size={30} color="#66e8c8" />
     <Text style={styles.itemText}>{name}</Text>
   </TouchableOpacity>
 );
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingHorizontal: 0,
     paddingVertical: 10,
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
   },
   icon: {
     marginLeft: 18,

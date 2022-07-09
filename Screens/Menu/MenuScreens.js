@@ -89,7 +89,7 @@ const MenuScreen = ({navigation}) => {
   };
   //List chứa các item Image,name,price, ...
   const renderListItem = ({item}) => {
-    console.log("Bac",item._id);
+    console.log("Thang",item._id);
     return (
       <TouchableOpacity
         onPress={() => navigation.navigate('DrawerNavigator', {screen: 'ProductMenu', params: { id_dashboard: item._id},}) }>
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   btnTabActive: {
-    backgroundColor: '#8D6E63',
+    backgroundColor: '#66e8c8',
   },
   textTabActive: {
     color: '#fff',

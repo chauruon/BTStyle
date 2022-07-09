@@ -46,7 +46,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   btnItemOne: {
-    backgroundColor: '#8D6E63',
+    backgroundColor: '#66e8c8',
     borderRadius: 15,
     width: 170,
     height: 60,

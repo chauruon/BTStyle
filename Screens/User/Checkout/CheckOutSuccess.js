@@ -14,8 +14,8 @@ const CheckOutSuccess = ({ navigation }) => {
                 <Text style={styles.textOne}>thành công</Text>
             </View>
             <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={styles.textTwo}>ArtWear sẽ đồng hành cùng bạn mua sắm</Text>
-                <Text style={styles.textTwo}> tiện lợi và dễ dàng</Text>
+                <Text style={styles.textTwo}>Cảm ơn quý khách đã đồng hành cùng</Text>
+                <Text style={styles.textTwo}>BTSTYLE</Text>
             </View>
             <TouchableOpacity
                 onPress={() => navigation.navigate('Main')}
@@ -35,7 +35,7 @@ const CheckOutSuccess = ({ navigation }) => {
                 </View>
             </TouchableOpacity>
             <View style={{ justifyContent: 'center', alignItems: 'center',marginTop:5 }}>
-                <Text style={styles.textTwo}>Quay lại</Text>
+                <Text style={styles.textTwo}>Tiếp tục mua sắm</Text>
             </View>
         </View>
     );

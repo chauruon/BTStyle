@@ -549,10 +549,10 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
                   />
                 </View>
                 <View style={styles.flashing}>
-                  <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Màu </Text>
+                  {/* <Text style={{ fontWeight: 'bold', fontSize: 20 }}>Màu </Text>
                   <Text style={{ fontWeight: 'bold', fontSize: 20, left: -5 }}>
                     Kích cỡ
-                  </Text>
+                  </Text> */}
                 </View>
                 <View
                   style={{
@@ -561,7 +561,7 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
                   }}>
                   {/* chọn màu */}
                   <View style={styles.colorContainer}>
-                    {colors.map((color, i) => {
+                    {/* {colors.map((color, i) => {
                       return (
                         <BouncyCheckbox
                           size={30}
@@ -570,37 +570,39 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
                           unfillColor={color}
                           iconStyle={{ borderColor: 'brown' }}
                           disableBuiltInState={true}
-                          fillColor={color}></BouncyCheckbox>
+                          fillColor={color}>
+                            
+                          </BouncyCheckbox>
                       );
-                    })}
+                    })} */}
                   </View>
                   {/* chọn size */}
                   <View style={styles.sizesContainer}>
                     {checksize.map((size, i) => {
-                      return (
-                        <TouchableOpacity
-                          onPress={() => selectedSize(i, size)}
-                          style={{
-                            borderColor: checkboxSize == size ? 'black' : '#D3D3D3', //if check true borderColor is black, else is #D3D3D3
-                            borderWidth: checkboxSize == size ? 2 : 2, // tuong tu nhu tren
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            height: 30,
-                            width: 30,
-                            borderRadius: 30,
-                            flexDirection: 'row',
-                            margin: 5
-                          }}
-                        >
-                          <Text>{size}</Text>
-                        </TouchableOpacity>
-                      );
+                      // return (
+                      //   <TouchableOpacity
+                      //     onPress={() => selectedSize(i, size)}
+                      //     style={{
+                      //       borderColor: checkboxSize == size ? 'black' : '#D3D3D3', //if check true borderColor is black, else is #D3D3D3
+                      //       borderWidth: checkboxSize == size ? 2 : 2, // tuong tu nhu tren
+                      //       justifyContent: 'center',
+                      //       alignItems: 'center',
+                      //       height: 30,
+                      //       width: 30,
+                      //       borderRadius: 30,
+                      //       flexDirection: 'row',
+                      //       margin: 5
+                      //     }}
+                      //   >
+                      //     <Text>{size}</Text>
+                      //   </TouchableOpacity>
+                      // );
                     })}
                   </View>
                 </View>
                 {/* Mô tả sản phẩm */}
                 <List.Section>
-                  <List.Accordion
+                  {/* <List.Accordion
                     titleStyle={{
                       marginLeft: -15,
                       fontWeight: 'bold',
@@ -612,7 +614,7 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
                     <View>
                       <Text style={{ fontSize: 18 }}>{details.mota}</Text>
                     </View>
-                  </List.Accordion>
+                  </List.Accordion> */}
                 </List.Section>
 
                 {/* Đánh giá */}
@@ -668,8 +670,8 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
                 </List.Section>
 
                 {/* Sản phẩm đề xuất   */}
-                <Text style={styles.mota}>Sản phẩm có thể bạn quan tâm</Text>
-                <FlatList
+                {/* <Text style={styles.mota}>Sản phẩm có thể bạn quan tâm</Text> */}
+                {/* <FlatList
                   showsHorizontalScrollIndicator={false}
                   data={products}
                   horizontal
@@ -677,7 +679,7 @@ const ProductDetailsScreen = ({ route, navigation, likeCountProp }) => {
                   renderItem={({ item }) => (
                     <SearchHangDau item={item} navigation={navigation} />
                   )}
-                />
+                /> */}
               </View>
             </Animated.ScrollView>
           </TriggeringView>

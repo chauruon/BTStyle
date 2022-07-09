@@ -10,6 +10,7 @@ const useCategories = () => {
       .get(`${baseURL}categories`)
       .then(function (response) {
         // handle success
+        console.log('the loai',response.data);
         setCategories(response.data);
       })
       .catch(function (error) {

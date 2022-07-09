@@ -128,7 +128,9 @@ const ProductScreen = ({ navigation }) => {
               <View style={styles.viewBody}>
                 <View style={styles.itemBody}>
                   <View style={styles.itemHeader}>
+                    <View style={{backgroundColor:'black',width:160,borderTopRightRadius:50,borderBottomRightRadius:50}}>
                     <Text style={styles.itemTextHeader}>Flash Sales</Text>
+                    </View>
                   </View>
                 </View>
                 {/* Giờ giảm giá */}
@@ -198,7 +200,9 @@ const ProductScreen = ({ navigation }) => {
             /> */}
             {/* Tim kiem pho bien */}
             <View style={styles.flashing}>
+            <View style={{backgroundColor:'black',width:230,borderTopRightRadius:50,borderBottomRightRadius:50}}>
               <Text style={styles.flashingTitlee}>SẢN PHẨM NỔI BẬC</Text>
+              </View>
               <TouchableOpacity
                 onPress={() =>
                   navigation.navigate('HomeNavigator', {
@@ -223,8 +227,10 @@ const ProductScreen = ({ navigation }) => {
        
             {/* Có thể bạn quan tâm */}
             <View style={{ height: 280, marginTop: 5 }}>
-              <View>
+              <View style={{backgroundColor:'black',width:230,borderTopRightRadius:50,borderBottomRightRadius:50}}>
+              <View >
                 <Text style={styles.textBox}>GỢI Ý HÔM NAY</Text>
+              </View>
               </View>
               <View>
                 <Carousel
