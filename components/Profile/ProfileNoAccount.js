@@ -15,13 +15,13 @@ import Icon from 'react-native-vector-icons/Feather';
 import IconCart from 'react-native-vector-icons/SimpleLineIcons';
 import ProfileItem from './ProfileItem/ProfileItem';
 import FormOrder from './ProfileItem/myOrder';
-import {Avatar} from 'react-native-paper';
+import { Avatar } from 'react-native-paper';
 import Gift from './ProfileItem/Gift';
 import Service from './ServiceItem/Service';
 import MyService from './ServiceItem/myService';
 import InfomationArtWear from './ProfileItem/infomationArtWear';
 const artwear = require('../../assets/images/Banner/SplashScreen.jpg');
-const {height, width} = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
 const onShare = () => {
   try {
@@ -40,7 +40,7 @@ const onShare = () => {
   }
 };
 
-const ProfileNoAccount = ({props, navigation}) => {
+const ProfileNoAccount = ({ props, navigation }) => {
   const abc = () => {
     navigation.navigate('UserNavigator', { screen: 'Login' })
   };
@@ -49,7 +49,7 @@ const ProfileNoAccount = ({props, navigation}) => {
       <View style={styles.container}>
         {/* Header */}
         <View style={styles.header}>
-          <View style={{flexDirection: 'row'}}>
+          <View style={{ flexDirection: 'row' }}>
             <IconCart name="handbag" size={24} style={styles.iconCart} />
           </View>
         </View>
@@ -64,15 +64,15 @@ const ProfileNoAccount = ({props, navigation}) => {
                 />
                 <View style={styles.userText}>
                   <Text style={styles.userName}>
-                    Chào mừng bạn đến với BT Style
+                    BT Style
                   </Text>
-                  <View style={{flexDirection: 'row', marginTop: 10}}>
+                  <View style={{ flexDirection: 'row', marginTop: 10 }}>
                     <TouchableOpacity
                       onPress={() =>
                         // props.navigation.navigate('Login')}
-                        navigation.navigate('UserNavigator', {screen: 'Login'})
+                        navigation.navigate('UserNavigator', { screen: 'Login' })
                       }>
-                      <Text style={{fontSize: 18}}>Đăng nhập/</Text>
+                      <Text style={{ fontSize: 18 }}>Đăng nhập/</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                       onPress={() =>
@@ -81,7 +81,7 @@ const ProfileNoAccount = ({props, navigation}) => {
                           screen: 'Register',
                         })
                       }>
-                      <Text style={{marginLeft: 2, fontSize: 18}}>Đăng ký</Text>
+                      <Text style={{ marginLeft: 2, fontSize: 18 }}>Đăng ký</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -101,7 +101,7 @@ const ProfileNoAccount = ({props, navigation}) => {
           />
           {/* Line gạch ngang */}
           <View style={styles.divider} />
-          <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             {/* Chờ thanh toán */}
             <FormOrder icon="wallet" name={`Chờ thanh \n     toán`} />
             {/* Xử lý hàng */}
@@ -112,17 +112,17 @@ const ProfileNoAccount = ({props, navigation}) => {
               name={` Đang vận \n   chuyển`}
             />
             {/* Đánh giá */}
-            <FormOrder icon="emoticon-excited-outline" name={` Đánh giá`} />
+            {/* <FormOrder icon="emoticon-excited-outline" name={` Đánh giá`} /> */}
           </View>
         </View>
 
         {/* Gift */}
-        <Gift navigation={navigation} />
+        {/* <Gift navigation={navigation} /> */}
 
         {/* Dịch vụ của tôi */}
-        <View style={styles.Service}>
+        {/* <View style={styles.Service}>
           <MyService icon="charity" name="Dịch vụ của tôi" />
-          {/* hàng 1 */}
+          hàng 1
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
             <Service
               icon="help-circle-outline"
@@ -134,7 +134,7 @@ const ProfileNoAccount = ({props, navigation}) => {
             <Service icon="cash-usd-outline" name={`Nạp thẻ `} />
             <Service icon="card-text-outline" name={`Đánh giá `} />
           </View>
-          {/* hàng 2 */}
+          hàng 2
           <View
             style={{
               flexDirection: 'row',
@@ -147,11 +147,11 @@ const ProfileNoAccount = ({props, navigation}) => {
             <Service icon="form-select" name={`Bán cùng\n ArtWear `} />
             <Service icon="share-variant" name={`Chia sẻ `} onPress={onShare} />
           </View>
-        </View>
+        </View> */}
         {/* Thông tin về BT Style */}
         <TouchableOpacity
           onPress={() =>
-            navigation.navigate('UserNavigator', {screen: 'InfomationArtWear'})
+            navigation.navigate('UserNavigator', { screen: 'InfomationArtWear' })
           }>
           <View style={styles.contentArtWear}>
             <InfomationArtWear

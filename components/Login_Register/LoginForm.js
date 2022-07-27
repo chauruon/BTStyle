@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -12,9 +12,9 @@ import FormContainer from './FormContainer/FormContainer';
 import FormInput from './FormInput/FormInput';
 import FormSubmitButton from './FormButton/FormSubmitButton';
 import FormHeader from './FormHeader/FormHeader';
-import {isValidObjField, updateError, isValidEmail} from '../../utils/Methods';
-import {useLogin} from '../../Context/LoginProvider';
-import {signIn} from '../../utils/user';
+import { isValidObjField, updateError, isValidEmail } from '../../utils/Methods';
+import { useLogin } from '../../Context/LoginProvider';
+import { signIn } from '../../utils/user';
 import Forgotpassword from './FormForgotPassword/Forgotpassword';
 import FormSMS from './FormSMS/FormSMS';
 //icon
@@ -22,20 +22,20 @@ const iconEmail = require('../../assets/icon/mail.jpg');
 const iconPassowrd = require('../../assets/icon/lock.jpg');
 import IconBack from 'react-native-vector-icons/Ionicons';
 
-import {TouchableOpacity} from 'react-native-gesture-handler';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import Dialog from 'react-native-dialog';
 
-const {height, width} = Dimensions.get('window');
+const { height, width } = Dimensions.get('window');
 
-const LoginForm = ({navigation}) => {
-  const {setIsLoggedIn, setProfile, setLoginPending} = useLogin();
+const LoginForm = ({ navigation }) => {
+  const { setIsLoggedIn, setProfile, setLoginPending } = useLogin();
   const [userInfo, setUserInfo] = useState({
     email: '',
     password: '',
   });
 
   const [error, setError] = useState('');
-  const {email, password} = userInfo;
+  const { email, password } = userInfo;
 
   //Submit kiem tra loi
   const submitForm = async () => {
@@ -46,7 +46,7 @@ const LoginForm = ({navigation}) => {
       try {
         const res = await signIn(userInfo.email, userInfo.password);
         if (res.data.success) {
-          setUserInfo({email: '', password: ''});
+          setUserInfo({ email: '', password: '' });
           setProfile(res.data.user);
           if (res.data.user.role !== 'user') {
             setIsLoggedIn(false);
@@ -75,7 +75,7 @@ const LoginForm = ({navigation}) => {
   };
 
   const handleOnChangeText = (value, fieldName) => {
-    setUserInfo({...userInfo, [fieldName]: value});
+    setUserInfo({ ...userInfo, [fieldName]: value });
   };
 
   //Form kiem tra loi
@@ -107,13 +107,13 @@ const LoginForm = ({navigation}) => {
   return (
     //FormContainer bao bọc toàn bộ các form con bên trong
     <FormContainer>
-      <View style={{marginVertical: 10}}>
+      <View style={{ marginVertical: 10 }}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <IconBack name="chevron-back-outline" size={30} />
         </TouchableOpacity>
       </View>
       {/* FormHeader trang tri phần header của screen đăng nhập(ví dụ như text hoặc hình ảnh) */}
-      <FormHeader Heading="ArtWear" subHeading="Đăng nhập tài khoản" />
+      <FormHeader Heading="BT Style" subHeading="Phong cách thời trang " />
       {error ? (
         <Text
           style={{
@@ -125,25 +125,36 @@ const LoginForm = ({navigation}) => {
           {error}
         </Text>
       ) : null}
-      <View style={{backgroundColor: '#fff', borderRadius: 10}}>
-        <FormInput
-          autoCapitalize="none"
-          label="Email"
-          placeholder="email"
+      <View style={{ alignItems: 'flex-start', width: '50%', marginLeft: 40 }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', color: "black" }}>Email</Text>
+      </View>
+      <View style={{ width: 330, backgroundColor: '#fff', borderRadius: 15, flexDirection: "row", justifyContent: 'space-between', alignItems: 'center', marginTop: 8, marginLeft: 26 }}>
+        <FormInput style={{ alignItems: 'center' }}
+          // autoCapitalize="none"
+          // label="Email"
+          // placeholder="Email"
           value={email}
           onChangeText={value => handleOnChangeText(value, 'email')}
           source={iconEmail}
         />
-        <FormInput
+      </View>
+
+      <View style={{ alignItems: 'flex-start', width: '50%', marginLeft: 40, marginTop: 15 }}>
+        <Text style={{ fontSize: 18, fontWeight: 'bold', color: "black" }}>Password</Text>
+      </View>
+      <View style={{ width: 330, backgroundColor: '#fff', borderRadius: 15, flexDirection: "row", alignItems: 'flex-start', marginTop: 8, marginLeft: 26 }}>
+        <FormInput style={{ alignItems: 'center' }}
           autoCapitalize="none"
           secureTextEntry
-          label="Mật Khẩu"
-          placeholder="..."
+          // label="Mật Khẩu"
+          // placeholder="..."
           value={password}
           onChangeText={value => handleOnChangeText(value, 'password')}
           source={iconPassowrd}
         />
       </View>
+      <Forgotpassword forgotPass="Quên mật khẩu?" onPress={ResetPassword} />
+
       <FormSubmitButton onPress={submitForm} title="Đăng Nhập" />
 
       {/* DigLog When login error */}
@@ -154,27 +165,26 @@ const LoginForm = ({navigation}) => {
           borderColor: 'white',
           width: width / 1.09,
         }}>
-        <Dialog.Title style={{fontSize: 28, fontWeight: 'bold'}}>
+        <Dialog.Title style={{ fontSize: 28, fontWeight: 'bold' }}>
           Đăng nhập thất bại{' '}
           <Image
-            style={{height: 25, width: 25}}
+            style={{ height: 25, width: 25 }}
             source={require('../../assets/images/Error/errorNotFound.jpg')}
           />
         </Dialog.Title>
-        <Dialog.Description style={{fontSize: 22, fontWeight: 'bold'}}>
+        <Dialog.Description style={{ fontSize: 22, fontWeight: 'bold' }}>
           Vui lòng kiểm tra lại tài khoản và mật khẩu
         </Dialog.Description>
         <Dialog.Button
-          style={{color: 'brown', fontWeight: 'bold', fontSize: 20}}
+          style={{ color: 'brown', fontWeight: 'bold', fontSize: 20 }}
           label="Tiếp tục"
           onPress={handleContinue}
         />
       </Dialog.Container>
 
-      <Forgotpassword forgotPass="Quên mật khẩu?" onPress={ResetPassword} />
 
       {/* //Set onPress form FormSMS */}
-      <FormSMS SMS="Đăng nhập bằng SMS" onPress={submitSMS} />
+      {/* <FormSMS SMS="Đăng nhập bằng SMS" onPress={submitSMS} /> */}
     </FormContainer>
   );
 };

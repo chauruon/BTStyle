@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -11,12 +11,12 @@ import FormContainer from './FormContainer/FormContainer';
 import FormInput from './FormInput/FormInput';
 import FormSubmitButton from './FormButton/FormSubmitButton';
 import FormHeader from './FormHeader/FormHeader';
-import {Formik, validateYupSchema} from 'formik';
+import { Formik, validateYupSchema } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import client from '../../assets/data/client';
-import {StackActions} from '@react-navigation/native';
-import {useLogin} from '../../Context/LoginProvider';
+import { StackActions } from '@react-navigation/native';
+import { useLogin } from '../../Context/LoginProvider';
 //Tạo biến chứa các icon,hình ảnh trong text input
 const iconName = require('../../assets/icon/profile.jpg');
 const iconEmail = require('../../assets/icon/mail.jpg');
@@ -51,7 +51,7 @@ const RegisterForm = props => {
     confirmPassword: '',
   };
 
-  const {loginPending, setLoginPending} = useLogin();
+  const { loginPending, setLoginPending } = useLogin();
   //Biến đăng kí
   const signUp = async (values, formikActions) => {
     setLoginPending(true);
@@ -65,7 +65,7 @@ const RegisterForm = props => {
         password: values.password,
       });
       if (signInRes.data.success) {
-        props.navigation.navigate('UserNavigator', {screen: 'Success'});
+        props.navigation.navigate('UserNavigator', { screen: 'Success' });
       }
     }
     //Khi đăng kí xong sẽ resetForm
@@ -91,10 +91,10 @@ const RegisterForm = props => {
           handleBlur,
           handleSubmit,
         }) => {
-          const {fullname, email, password, confirmPassword} = values;
+          const { fullname, email, password, confirmPassword } = values;
           return (
             <>
-              <View style={{marginVertical: 10}}>
+              <View style={{ marginVertical: 10 }}>
                 <TouchableOpacity
                   onPress={() => props.navigation.navigate('ProfileScreen')}>
                   <IconBack name="chevron-back-outline" size={30} />
@@ -102,10 +102,10 @@ const RegisterForm = props => {
               </View>
               {/* FormHeader trang tri phần header của screen đăng ky(ví dụ như text hoặc hình ảnh) */}
               <FormHeader
-                Heading="ArtWear"
+                Heading="BT Style"
                 subHeading="Shop easy, shop happy"
               />
-              <View style={{backgroundColor: '#fff', borderRadius: 10}}>
+              <View style={{ backgroundColor: '#fff', borderRadius: 10 }}>
                 <FormInput
                   // autoCapitalize='none' khi nhập chữ vào textinput, không cho phép viết hoa chữ cái đầu
                   autoCapitalize="none"
@@ -162,23 +162,23 @@ const RegisterForm = props => {
                   alignItems: 'center',
                   marginTop: 20,
                 }}>
-                <Text style={{fontSize: 18}}>
+                <Text style={{ fontSize: 18 }}>
                   Bằng việc đăng ký, bạn đã đồng ý với
                 </Text>
-                <View style={{flexDirection: 'row'}}>
-                  <Text style={{fontSize: 18, color: '#1E90FF'}}>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={{ fontSize: 18, color: '#1E90FF' }}>
                     Điều khoản dịch vụ
                   </Text>
-                  <Text style={{fontSize: 18, color: '#000', marginLeft: 10}}>
+                  <Text style={{ fontSize: 18, color: '#000', marginLeft: 10 }}>
                     &
                   </Text>
                   <Text
-                    style={{fontSize: 18, color: '#1E90FF', marginLeft: 10}}>
+                    style={{ fontSize: 18, color: '#1E90FF', marginLeft: 10 }}>
                     Chính sách riêng tư
                   </Text>
                 </View>
-                <View style={{flexDirection: 'row'}}>
-                  <Text style={{fontSize: 18, color: '#000'}}>của</Text>
+                <View style={{ flexDirection: 'row' }}>
+                  <Text style={{ fontSize: 18, color: '#000' }}>của</Text>
                   <Text
                     style={{
                       fontSize: 18,

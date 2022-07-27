@@ -5,7 +5,7 @@ const FormSubmitButton = ({ title, submitting, onPress }) => {
 
     //Nếu chưa nhập dữ liệu vào text inpput thì nút submit có màu xám nhạt
     //Khi nhập dữ liệu vào text input thì nút submit đổi màu nâu đậm
-    const backgroundColor = submitting ? 'rgba(27,27,51,0.4)' : 'black'
+    const backgroundColor = submitting ? 'rgba(27,27,51,0.4)' : '#66e8c8'
 
     return (
         <TouchableOpacity
@@ -20,8 +20,11 @@ const FormSubmitButton = ({ title, submitting, onPress }) => {
 
 const styles = StyleSheet.create({
     container: {
+        width: 330,
         height: 45,
-        borderRadius: 8,
+        marginLeft: 26,
+        marginTop: 23,
+        borderRadius: 15,
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 10

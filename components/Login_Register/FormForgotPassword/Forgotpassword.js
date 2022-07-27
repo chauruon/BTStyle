@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-    StyleSheet, 
-    View, 
-    Text, 
-    Dimensions, 
-    TextInput, 
-    TouchableOpacity 
+import {
+    StyleSheet,
+    View,
+    Text,
+    Dimensions,
+    TextInput,
+    TouchableOpacity
 } from 'react-native';
 
 const Forgotpassword = ({ forgotPass, onPress }) => {
@@ -23,6 +23,8 @@ const Forgotpassword = ({ forgotPass, onPress }) => {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
+        marginLeft: 230,
+        marginTop: 17,
     },
     forgotPass: {
         fontSize: 18,
